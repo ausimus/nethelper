@@ -54,7 +54,7 @@ public class PortHelperTest
                 .toMap();
         Port p = PortHelper.assignPort(o);
         assertEquals(o, p);
-        assertEquals(80, p.getAssignedPort());
+        assertEquals(8863, p.getAssignedPort());
         o = new Port(InetAddress.getLoopbackAddress(), Protocol.TCP)
                 .setDescription("Test")
                 .addPort(80)
