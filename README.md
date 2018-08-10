@@ -5,8 +5,26 @@
 
 Net Helper is a small library that provides helper methods to make networking in Java easier.
 
-Example:
+To use, add the Jitpack repository:
+```xml
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
 
+And then add the dependency:
+```xml
+	<dependency>
+	    <groupId>com.github.xorith.nethelper</groupId>
+	    <artifactId>nethelper</artifactId>
+	    <version>1.0</version>
+	</dependency>
+```
+
+Example:
 ```java
 package app;
 
