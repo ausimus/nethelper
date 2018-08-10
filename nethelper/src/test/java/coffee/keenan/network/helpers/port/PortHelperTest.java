@@ -50,7 +50,7 @@ public class PortHelperTest
     {
         Port o = new Port(InetAddress.getLoopbackAddress(), Protocol.TCP)
                 .setDescription("Test")
-                .addPort(80)
+                .addPort(8863)
                 .toMap();
         Port p = PortHelper.assignPort(o);
         assertEquals(o, p);
