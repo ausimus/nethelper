@@ -1,0 +1,13 @@
+# Java ignore
+*.class
+hs_err_pid*
+
+# Log file
+*.log
+
+# Maven ignore
+target/
+
+# IDEA ignore
+*.iml
+.idea/
