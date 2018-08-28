@@ -11,3 +11,7 @@ target/
 # IDEA ignore
 *.iml
 .idea/
+
+# VS Code Ignores
+.vscode/
+.settings/
