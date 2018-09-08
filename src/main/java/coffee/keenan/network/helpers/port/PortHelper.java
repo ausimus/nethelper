@@ -32,10 +32,21 @@ public class PortHelper extends ErrorTracking
         return assignPort(port, new DefaultConfiguration());
     }
 
+    public Port assignFavoredPort(@NotNull final Port port)
+    {
+        final Integer p = port.getFavoredPort();
+        if (p != null && validatePort(port.getAddress(), p, port.getValidators()))        
+            port.setAssignedPort(p);
+        return port;
+    }
+
     @SuppressWarnings("WeakerAccess")
     public static Port assignPort(@NotNull final Port port, @NotNull final IConfiguration configuration)
     {
         final PortHelper portHelper = new PortHelper(configuration);
+        portHelper.assignFavoredPort(port);
+        if (port.getAssignedPort() != 0) return port;
+        
         for (final int p : port.getPorts())
         {
             if (portHelper.validatePort(port.getAddress(), p, port.getValidators()))

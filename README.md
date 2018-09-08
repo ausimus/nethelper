@@ -1,19 +1,15 @@
 # Net Helper
 
-[![Release](https://jitpack.io/v/xorith/nethelper.svg)](https://jitpack.io/#xorith/nethelper)
 [![Build Status](https://travis-ci.org/xorith/nethelper.svg?branch=master)](https://travis-ci.org/xorith/nethelper)
 
 Net Helper is a small library that provides helper methods to make networking in Java easier.
 
+## 1.1.1 Changes ##
+Added a favored port setting on ports. The helper will attempt to use this port first if possible before falling back on the other possible ports allowed for a given port object.
 
-Add the dependency:
-```xml
-<dependency>
-  <groupId>coffee.wantsmore</groupId>
-  <artifactId>nethelper</artifactId>
-  <version>1.0</version>
-</dependency>
-```
+## Usage ##
+
+To use, follow the instructions under Set Me Up! on [Bintray](https://bintray.com/xorith/coffee/NetHelper#)
 
 Example:
 ```java

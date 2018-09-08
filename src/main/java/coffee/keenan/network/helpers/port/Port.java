@@ -12,6 +12,7 @@ import java.util.*;
 public class Port extends ErrorTracking
 {
     private final List<Integer> ports = new ArrayList<>();
+    private Integer favortedPort;
     private final Protocol protocols;
     private final InetAddress address;
     private final Set<IPortValidator> validators = new HashSet<>();
@@ -37,6 +38,17 @@ public class Port extends ErrorTracking
                 validators.add(new UDPValidator());
                 break;
         }
+    }
+
+    public Port setFavoredPort(final int port)
+    {
+        this.favortedPort = port;
+        return this;
+    }
+
+    public Integer getFavoredPort()
+    {
+        return this.favortedPort;
     }
 
     public Port addPort(final int port)

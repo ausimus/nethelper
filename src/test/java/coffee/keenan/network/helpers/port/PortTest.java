@@ -13,6 +13,15 @@ import static org.junit.Assert.*;
 
 public class PortTest
 {
+    @Test
+    public void addFavoredPort()
+    {
+        Port p = new Port(InetAddress.getLoopbackAddress(), Protocol.TCP);
+        assertNull(p.getFavoredPort());
+        p.setFavoredPort(1234);
+        assertNotNull(p.getFavoredPort());
+        assertEquals(1234, p.getFavoredPort().intValue());
+    }
 
     @Test
     public void addPort()
