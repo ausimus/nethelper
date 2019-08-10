@@ -1,6 +1,6 @@
 package coffee.keenan.network.helpers;
 
-import org.jetbrains.annotations.NotNull;
+import com.sun.istack.internal.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;

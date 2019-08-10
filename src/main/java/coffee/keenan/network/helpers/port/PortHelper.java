@@ -5,7 +5,7 @@ import coffee.keenan.network.config.IConfiguration;
 import coffee.keenan.network.helpers.ErrorTracking;
 import coffee.keenan.network.validators.port.IPortValidator;
 import coffee.keenan.network.wrappers.upnp.UPNPService;
-import org.jetbrains.annotations.NotNull;
+import com.sun.istack.internal.NotNull;
 
 import java.net.InetAddress;
 import java.util.Arrays;

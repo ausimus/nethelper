@@ -7,8 +7,8 @@ import coffee.keenan.network.helpers.interfaces.InterfaceHelper;
 import coffee.keenan.network.validators.address.IAddressValidator;
 import coffee.keenan.network.validators.address.IP4Validator;
 import coffee.keenan.network.validators.address.InternetValidator;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import com.sun.istack.internal.NotNull;
+import com.sun.istack.internal.Nullable;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

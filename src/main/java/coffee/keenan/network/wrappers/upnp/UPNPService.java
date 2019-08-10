@@ -9,7 +9,6 @@ import org.fourthline.cling.model.meta.RemoteDevice;
 import org.fourthline.cling.model.meta.Service;
 import org.fourthline.cling.support.igd.callback.PortMappingAdd;
 import org.fourthline.cling.support.model.PortMapping;
-import org.jetbrains.annotations.Contract;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -50,20 +49,16 @@ public enum UPNPService
         getInstance().upnpService.shutdown();
     }
 
-    @SuppressWarnings("SameReturnValue")
-    @Contract(pure = true)
     public static UPNPService getInstance()
     {
         return INSTANCE;
     }
 
-    @Contract(pure = true)
     static RemoteDevice getRouterDevice()
     {
         return getInstance().router;
     }
 
-    @Contract(pure = true)
     static Service getWanService()
     {
         return getInstance().wanService;

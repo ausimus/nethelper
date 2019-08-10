@@ -6,7 +6,7 @@ import coffee.keenan.network.helpers.ErrorTracking;
 import coffee.keenan.network.validators.interfaces.IInterfaceValidator;
 import coffee.keenan.network.validators.interfaces.NotLoopbackValidator;
 import coffee.keenan.network.validators.interfaces.UpValidator;
-import org.jetbrains.annotations.NotNull;
+import com.sun.istack.internal.NotNull;
 
 import java.net.NetworkInterface;
 
